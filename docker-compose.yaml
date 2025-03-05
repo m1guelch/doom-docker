@@ -1,8 +1,13 @@
-version: '3'
-
 services:
   doom-app:
-    image: callumhoughton22/doom-in-docker:0.1
+    container_name: doom-app
+    image: m1guelch/doom-docker:latest
     restart: always
     ports: 
-        - 8080:8080
+        - 8085:8080
+    networks:
+      - doom-net
+
+networks:
+  doom-net:
+    driver: bridge

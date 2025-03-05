@@ -1,18 +1,45 @@
-# Containerized Doom 
+Containerized Doom game playable on the web browser
+==================
 
-The `/doom` directory contains the actual web app that runs doom via JS-DOS on a webserver. Inside the `/doom` folder run:
+This repository provides the code needed to deploy a self-hosted Doom-game app that can be played on the web browser.
+The `/doom` directory contains the actual web app that runs doom via JS-DOS on a webserver.
+
+
+# Prerequisites
+
+You only need to have Docker and Docker compose installed on your server in order to run the Doom app.
+
+
+# Usage
+1. Clone this repository
+2. Deploy the container
+3. Access the game on your web browser
+
+
+## 1. Clone this repository
+
+You can do so running this command in the working directory of your choice:
+
 ```
-npm install
-npm start
+git clone https://github.com/m1guelch/doom-docker.git
 ```
 
 
-Doom should now be playable on http://127.0.0.1:8080
+## 2. Deploy the container
 
-## Running as a Container
+To run the container, execute the following command inside of the repository directory:
 
-The Doom web app is also containerized (because why not?) via Docker. The image is available on DockerHub [here](https://hub.docker.com/r/callumhoughton22/doom-in-docker). An example `docker-compose.yaml` is present in the root of the repository. 
+```
+docker-compose up -d
+```
+
+You can check if the container is running correctly by executing this command:
+
+```
+docker ps
+```
 
 
+## 3. Access the game on your web browser
 
-A working example is deployed [here](https://gamertime.callums-stuff.net) showcasing "DoOm aS a CoNtAiNeRiZeD WeB SeRvIcE"
+Doom should now be playable on http://<YOUR-IP-ADDRESS>:8085 on any web browser of your choice. Enjoy!
