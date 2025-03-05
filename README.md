@@ -42,4 +42,4 @@ docker ps
 
 ## 3. Access the game on your web browser
 
-Doom should now be playable on http://YOUR-IP-ADDRESS:8085 on any web browser of your choice. Enjoy!
+Doom should now be playable on http://YOUR-IP-ADDR:8085 on any web browser of your choice. Enjoy!
