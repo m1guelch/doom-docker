@@ -11,9 +11,9 @@ You only need to have Docker and Docker compose installed on your server in orde
 
 
 # Usage
-1. Clone this repository
-2. Deploy the container
-3. Access the game on your web browser
+1. Clone this repository.
+2. Deploy the container.
+3. Access the game on your web browser.
 
 
 ## 1. Clone this repository
